@@ -17,7 +17,8 @@ export const MenuContent = styled(NavigationMenu.List)`
     display: flex;
     justify-content: space-between;
 
-    width: 50rem;
+    width: 100%;
+    gap:2.5rem;
 `
 
 export const MenuItem = styled(NavigationMenu.Item)`
@@ -50,7 +51,7 @@ export const MenuViewPort = styled(NavigationMenu.Viewport)`
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 6%;
+    top: 7%;
 
     width: 40.1875rem;
     height: 16.4375rem;

@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import * as Separator from '@radix-ui/react-separator';
+
 
 export const HeaderContainer = styled.header`
     display: flex;
@@ -9,7 +11,6 @@ export const HeaderContainer = styled.header`
 
     width: 90rem;
     height: 5.5rem;
-
     
     & > img {
         width: 9.91925rem;
@@ -32,3 +33,10 @@ export const ContentContainer = styled.div`
     height: 100%;
 `
 
+export const SeparatorMenu = styled(Separator.Root)`
+    &[data-orientation='vertical']{
+        color: ${props => props.theme.color.brandColorTealLight};
+        
+        margin-right: 0.12rem;
+    }
+`

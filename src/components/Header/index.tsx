@@ -1,6 +1,7 @@
-import { HeaderContainer, HeaderContent, ContentContainer } from './styles'
+import { HeaderContainer, HeaderContent, ContentContainer, SeparatorMenu } from './styles'
 import logoImg from '../../assets/logo.svg'
 import { NavigationMenuHeader } from '../NavigationMenuHeader'
+import { NavigationClient } from '../NavigationClient'
 
 export function Header() {
   return (
@@ -13,9 +14,10 @@ export function Header() {
         </ContentContainer>
       </HeaderContent>
 
-      <div>
-        Login - Começar agora - Língua
-      </div>
+      <SeparatorMenu decorative />
+
+      <NavigationClient />
+
     </HeaderContainer>
   )
 }
