@@ -20,6 +20,5 @@ export const defaultTheme = {
     bodyText16: `400 1rem/1.5rem Inter`,
     bodyLink: `600 1rem/1.25rem Inter`,
     languageOptions: `500 0.9375rem/0.98438rem Inter`,
-
   }
 } as const

@@ -1,6 +1,4 @@
-
-import { CaretDownIcon } from '@radix-ui/react-icons';
-import { MenuContainer, MenuContent, MenuItem, MenuLink, MenuTrigger, MenuTriggerContent, MenuViewPort } from './styles';
+import { MenuContainer, MenuContent, MenuItem, MenuLink, MenuTrigger, MenuTriggerContent, MenuViewPort, IconMenuTrigger } from './styles';
 
 export function NavigationMenuHeader() {
     return (
@@ -9,6 +7,7 @@ export function NavigationMenuHeader() {
                 <MenuItem>
                     <MenuTrigger>
                         Soluções
+                        <IconMenuTrigger />
                     </MenuTrigger>
 
                     <MenuTriggerContent>

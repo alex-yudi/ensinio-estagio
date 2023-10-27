@@ -10,14 +10,14 @@ export const HeaderContainer = styled.header`
     width: 90rem;
     height: 5.5rem;
 
-    border: 1px solid red;
-
+    
     & > img {
-    width: 9.91925rem;
-    height: 2.5rem;
-
-    background-color: black; // TODO: TIRAR ISSO DPS
+        width: 9.91925rem;
+        height: 2.5rem;
     }
+    
+    border: 1px solid red;
+    background-color: black; // TODO: TIRAR ISSO DPS
 `
 
 export const HeaderContent = styled.div`
