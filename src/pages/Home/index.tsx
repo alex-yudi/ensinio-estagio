@@ -2,7 +2,7 @@ import { useContextSelector } from 'use-context-selector'
 import {
   HomeContainer,
 } from './styles'
-import { ExamplesContext } from '../../stores/contexts/counterStore'
+import { Hero } from '../../components/Hero'
 
 export function Home() {
   /*   
@@ -16,7 +16,7 @@ export function Home() {
   return (
     <div>
       <HomeContainer>
-
+        <Hero />
       </HomeContainer>
     </div>
   )
