@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     padding: 0 7rem;
 
-    min-width: 90rem;
+    min-width: 100%;
     height: 5.5rem;
     
     & > img {
@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
         margin-right: 5rem;
     }
 
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 99;
     background: rgba(0, 0, 0, 0.03);

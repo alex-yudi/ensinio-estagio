@@ -23,5 +23,58 @@ export const HatLink = styled.a`
 `
 
 export const ContainerContentMainHome = styled.main`
+    display: flex;
+    gap: 9.5rem;
 
+    margin-top: 4.19rem;
+    margin-bottom: 6.69rem;
+`
+
+export const FooterMainHome = styled.footer`
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 6.9rem;
+`
+
+export const LinkOtherResources = styled.a`
+    all: unset;
+    
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    font: ${props => props.theme.fonts.menuOptions};
+    color: ${props => props.theme.color.neutralColor200};
+    &>img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color:${props => props.theme.color.brandColorPure}
+    }
+`
+
+export const LinkSeeMore = styled.a`
+    all: unset;
+    
+    display: flex;
+    align-items: center;
+    gap:2rem;
+
+    font:${props => props.theme.fonts.bodyLink};
+    color:${props => props.theme.color.brandColorPure};
+
+    &>img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &:hover{
+        cursor: pointer;
+        color:${props => props.theme.color.brandColorTealPure};
+        transform: scale(1.05);
+    }
 `
