@@ -22,7 +22,7 @@ export const MenuContent = styled(NavigationMenu.List)`
 export const MenuItem = styled(NavigationMenu.Item)`
     &:hover:nth-last-child(-n+4){
         cursor: pointer;
-        text-decoration: underline
+        text-decoration: underline; 
     }
 `
 

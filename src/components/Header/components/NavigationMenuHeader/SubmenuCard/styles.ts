@@ -20,8 +20,9 @@ export const ContainerSubmenuCard = styled.div`
     padding: 0.4rem;
     border-radius: 5px;
     &:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 0px 0.5px #5A5566;
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 0.5px #5A5566;
+        transition: box-shadow .3s;
     }
 `
 

@@ -14,7 +14,8 @@ export const ContainerCardLanguage = styled.div`
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0px 0px 0px 0.5px #5A5566;
+        box-shadow: 0 0 3px #05EDE3;
+        transition: box-shadow .3s;
     }
 `
 
