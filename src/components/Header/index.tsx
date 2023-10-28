@@ -2,7 +2,10 @@ import { HeaderContainer, HeaderContent, ContentContainer, SeparatorMenu } from 
 import logoImg from '../../assets/logo.svg'
 import { NavigationMenuHeader } from '../NavigationMenuHeader'
 import { NavigationClient } from '../NavigationClient'
+import * as Separator from '@radix-ui/react-separator';
 
+
+// TODO: Alterar para header ser sticky e ter outro z-index;
 export function Header() {
   return (
     <HeaderContainer>
@@ -14,7 +17,7 @@ export function Header() {
         </ContentContainer>
       </HeaderContent>
 
-      <SeparatorMenu decorative />
+      <SeparatorMenu />
 
       <NavigationClient />
 

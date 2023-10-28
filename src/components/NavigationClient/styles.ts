@@ -9,7 +9,7 @@ export const NavigationMenuClientContainer = styled(NavigationMenu.Root)`
     font: ${props => props.theme.fonts.menuOptions};
     color: ${props => props.theme.color.mainFontLight};
 
-    `
+`
 
 export const MenuClientList = styled(NavigationMenu.List)`
     list-style: none;
@@ -63,7 +63,7 @@ export const LanguagesToBeSelected = styled(NavigationMenu.Viewport)`
     display: flex;
     justify-content: center;
     
-    top:6%;
+    top:60%;
     right:1%;
 
     width: 8.625rem;

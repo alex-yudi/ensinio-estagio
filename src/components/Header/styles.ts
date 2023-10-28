@@ -9,16 +9,19 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     padding: 0 7rem;
 
-    width: 90rem;
+    min-width: 90rem;
     height: 5.5rem;
     
     & > img {
         width: 9.91925rem;
         height: 2.5rem;
     }
-    
-    border: 1px solid red;
-    background-color: black; // TODO: TIRAR ISSO DPS
+
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(15px);
 `
 
 export const HeaderContent = styled.div`
@@ -34,9 +37,9 @@ export const ContentContainer = styled.div`
 `
 
 export const SeparatorMenu = styled(Separator.Root)`
-    &[data-orientation='vertical']{
-        color: ${props => props.theme.color.brandColorTealLight};
-        
-        margin-right: 0.12rem;
-    }
+    width: 0.0625rem;
+    height: 1.5rem;
+
+    margin: 3rem;
+    background-color: ${props => props.theme.color.brandColorTealLight};
 `
