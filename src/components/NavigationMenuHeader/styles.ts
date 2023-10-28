@@ -7,7 +7,6 @@ export const MenuContainer = styled(NavigationMenu.Root)`
     align-items: center;
 
     padding-left: 9.6rem;
-    padding-right: 3rem;
 
     font: ${props => props.theme.fonts.menuOptions};
     color: ${props => props.theme.color.mainFontLight}
@@ -51,7 +50,7 @@ export const MenuViewPort = styled(NavigationMenu.Viewport)`
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 7%;
+    top: 70%;
 
     width: 40.1875rem;
     height: 16.4375rem;

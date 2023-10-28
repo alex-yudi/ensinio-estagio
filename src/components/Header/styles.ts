@@ -39,9 +39,9 @@ export const ContentContainer = styled.div`
 `
 
 export const SeparatorMenu = styled(Separator.Root)`
-    &[data-orientation='vertical']{
-        color: ${props => props.theme.color.brandColorTealLight};
-        
-        margin-right: 0.12rem;
-    }
+    width: 0.0625rem;
+    height: 1.5rem;
+
+    margin: 3rem;
+    background-color: ${props => props.theme.color.brandColorTealLight};
 `
