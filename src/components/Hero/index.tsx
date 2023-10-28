@@ -1,4 +1,4 @@
-import { ButtonSeeVideoHero, ButtonStartHero, ContainerButtonsHero, ContainerContentHero, ContentHero, DescriptionContentHero, HeroContainer, HeroTitleHat, ImageHero, TitleContentHero } from "./styles";
+import { ButtonSeeVideoHero, ButtonStartHero, ContainerButtonsHero, ContainerContentHero, ContentHero, DescriptionContentHero, HeroContainer, ImageHero, TitleContentHero } from "./styles";
 import manHero from '../../assets/man-hero.png'
 import devicesIcon from '../../assets/devices.svg'
 import playIcon from '../../assets/Play.svg'
