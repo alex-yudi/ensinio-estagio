@@ -1,5 +1,6 @@
-import { ClientSignIn, IconMenuTrigger, ItemMenuClient, LanguagesToBeSelected, MenuClientList, NavigationMenuClientContainer, StartButton, TriggerLanguages } from "./styles";
+import { ClientSignIn, IconMenuTrigger, ItemMenuClient, Viewport, MenuClientList, NavigationMenuClientContainer, StartButton, TriggerLanguages, LanguagesToBeSelected } from "./styles";
 import iconClient from '../../../../assets/icon-user.svg'
+import { CardLanguage } from "./CardLanguage";
 
 export function NavigationClient() {
     return (
@@ -23,10 +24,23 @@ export function NavigationClient() {
                         PT
                         <IconMenuTrigger />
                     </TriggerLanguages>
+
+                    <LanguagesToBeSelected>
+                        <CardLanguage
+                            language="brazil"
+                            checked
+                        />
+                        <CardLanguage
+                            language="usa"
+                        />
+                        <CardLanguage
+                            language="spain"
+                        />
+                    </LanguagesToBeSelected>
                 </ItemMenuClient>
             </MenuClientList>
 
-            <LanguagesToBeSelected />
+            <Viewport />
         </NavigationMenuClientContainer>
     )
 }

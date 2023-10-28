@@ -16,6 +16,13 @@ export const ContainerSubmenuCard = styled.div`
         flex-direction: row;
         gap: 1rem;
     }
+
+    padding: 0.4rem;
+    border-radius: 5px;
+    &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0.5px #5A5566;
+    }
 `
 
 export const ContainerTextSubmenuCard = styled.div`

@@ -1,4 +1,4 @@
-import { SubmenuCard } from '../../../SubmenuCard';
+import { SubmenuCard } from './SubmenuCard';
 import { MenuContainer, MenuContent, MenuItem, MenuTrigger, MenuTriggerContent, MenuViewPort, IconMenuTrigger, TitleSolutions, ContainerTriggerContent } from './styles';
 import eadIcon from '../../../../assets/cards/ead.svg'
 import socialIcon from '../../../../assets/cards/icon-social.svg'

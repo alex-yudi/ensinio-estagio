@@ -57,7 +57,7 @@ export const ContainerTriggerContent = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap:2.5rem;
+    gap: 1.5rem;
 `
 
 export const MenuLink = styled(NavigationMenu.Link)`
