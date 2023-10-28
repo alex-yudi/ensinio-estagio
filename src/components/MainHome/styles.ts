@@ -27,7 +27,9 @@ export const HatLink = styled.a`
 
 export const ContainerContentMainHome = styled.main`
     display: flex;
-    gap: 9.5rem;
+    justify-content: space-between;
+
+    width: 100%;
 
     margin-top: 4.19rem;
     margin-bottom: 6.69rem;
