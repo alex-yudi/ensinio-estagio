@@ -57,8 +57,13 @@ export const TriggerLanguages = styled(NavigationMenu.Trigger)`
 
     gap:0.2rem;
 `
+export const LanguagesToBeSelected = styled(NavigationMenu.Content)`
+    width: 8.625rem;
+    
+    border-radius: 0.5rem;
+`
 
-export const LanguagesToBeSelected = styled(NavigationMenu.Viewport)`
+export const Viewport = styled(NavigationMenu.Viewport)`
     position: absolute;
     display: flex;
     justify-content: center;
@@ -67,11 +72,9 @@ export const LanguagesToBeSelected = styled(NavigationMenu.Viewport)`
     right:1%;
 
     width: 8.625rem;
-    height: 9rem;
     border-radius: 0.5rem;
 
     background-color: #fff;
-    border: 1px solid black; // TODO: Retirar dps
 `
 export const IconMenuTrigger = styled(TriangleDownIcon)`
     color: ${props => props.theme.color.brandColorTealLight}
