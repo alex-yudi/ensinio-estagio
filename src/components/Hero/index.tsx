@@ -14,6 +14,7 @@ export function Hero() {
                     color="fontLight"
                     alt=""
                     title="plataforma all in one"
+                    opacity
                 />
                 <ContentHero>
                     <TitleContentHero>

@@ -5,11 +5,12 @@ type TitleHatProps = {
     alt: string;
     title: string;
     color: "fontLight" | "brandColorDark";
+    opacity?: boolean;
 }
 
-export function TitleHat({ srcImg, alt, title, color }: TitleHatProps) {
+export function TitleHat({ srcImg, alt, title, color, opacity }: TitleHatProps) {
     return (
-        <TitleHatContainer className={`${color}`}>
+        <TitleHatContainer className={`${color} ${opacity && "opacity"}`}>
             <img src={srcImg} alt={alt} />
             {title}
         </TitleHatContainer>

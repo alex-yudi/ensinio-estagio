@@ -13,4 +13,7 @@ export const TitleHatContainer = styled.div`
     &.brandColorDark {
         color: ${props => props.theme.color.brandColorDark};
     }
+    &.opacity{
+        opacity: 0.75;
+    }
 `
