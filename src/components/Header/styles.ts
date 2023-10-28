@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     padding: 0 7rem;
 
-    width: 90rem;
+    min-width: 90rem;
     height: 5.5rem;
     
     & > img {
@@ -18,7 +18,12 @@ export const HeaderContainer = styled.header`
     }
     
     border: 1px solid red;
-    background-color: black; // TODO: TIRAR ISSO DPS
+
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(15px);
 `
 
 export const HeaderContent = styled.div`
