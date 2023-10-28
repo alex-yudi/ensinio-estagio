@@ -26,15 +26,6 @@ export const ContainerContentHero = styled.div`
     width: 31.1875rem;
 `
 
-export const HeroTitleHat = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    font: ${props => props.theme.fonts.tittleHat};
-    color: ${props => props.theme.color.mainFontLight};
-`
-
 export const ContentHero = styled.div`
     display: flex;
     flex-direction: column;

@@ -1,17 +1,21 @@
-import { ButtonSeeVideoHero, ButtonStartHero, ContainerButtonsHero, ContainerContentHero, ContentHero, DescriptionContentHero, HeroContainer, HeroTitleHat, ImageHero, TitleContentHero } from "./styles";
+import { ButtonSeeVideoHero, ButtonStartHero, ContainerButtonsHero, ContainerContentHero, ContentHero, DescriptionContentHero, HeroContainer, ImageHero, TitleContentHero } from "./styles";
 import manHero from '../../assets/man-hero.png'
 import devicesIcon from '../../assets/devices.svg'
 import playIcon from '../../assets/Play.svg'
+import { TitleHat } from "../TitleHat";
+
 
 export function Hero() {
     return (
         <HeroContainer>
             <ContainerContentHero>
-                <HeroTitleHat>
-                    <img src={devicesIcon} alt="Devices" />
-                    plataforma all in one
-                </HeroTitleHat>
-
+                <TitleHat
+                    srcImg={devicesIcon}
+                    color="fontLight"
+                    alt=""
+                    title="plataforma all in one"
+                    opacity
+                />
                 <ContentHero>
                     <TitleContentHero>
                         Sua escola online <br />

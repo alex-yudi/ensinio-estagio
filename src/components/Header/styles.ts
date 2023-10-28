@@ -9,37 +9,31 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     padding: 0 7rem;
 
-    min-width: 90rem;
+    min-width: 100%;
     height: 5.5rem;
     
     & > img {
         width: 9.91925rem;
         height: 2.5rem;
+        margin-right: 5rem;
     }
 
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 99;
     background: rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(15px);
 `
 
-export const HeaderContent = styled.div`
-
-`
 
 export const ContentContainer = styled.div`
     display: flex;
     align-items: center;
-    
-    width: 100%;
-    height: 100%;
 `
 
 export const SeparatorMenu = styled(Separator.Root)`
     width: 0.0625rem;
     height: 1.5rem;
 
-    margin: 3rem;
     background-color: ${props => props.theme.color.brandColorTealLight};
 `

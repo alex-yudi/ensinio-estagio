@@ -15,11 +15,11 @@ export const defaultTheme = {
     menuClient: `600 0.9375rem/0.98438rem Inter`,
     submenuTitle: `600 0.9375rem/1.17188rem sans-serif`,
     submenuDescription: `400 0.8125rem/1.21875rem Inter`,
-    tittleHat: `600 1rem/1.05rem sans-serif; text-transform: uppercase; letter-spacing: 0.15rem;opacity: 0.75`,
+    tittleHat: `600 1rem/1.05rem sans-serif; text-transform: uppercase; letter-spacing: 0.15rem`,
     titleHero: `500 2.75rem/3.025rem Inter; letter-spacing: -0.0825rem`,
     tittleH32: `400 2rem/2.5rem sans-serif`,
     tittleH20: `600 1.25rem/1.5625rem sans-serif; letter-spacing: 0.00625rem`,
-    bodyText16: `400 1rem/1.5rem Inter; opacity: 0.9`,
+    bodyText16: `400 1rem/1.5rem Inter;`,
     bodyLink: `600 1rem/1.25rem Inter`,
     languageOptions: `500 0.9375rem/0.98438rem Inter`,
   }

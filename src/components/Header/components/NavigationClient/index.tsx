@@ -1,5 +1,5 @@
 import { ClientSignIn, IconMenuTrigger, ItemMenuClient, LanguagesToBeSelected, MenuClientList, NavigationMenuClientContainer, StartButton, TriggerLanguages } from "./styles";
-import iconClient from '../../assets/icon-user.svg'
+import iconClient from '../../../../assets/icon-user.svg'
 
 export function NavigationClient() {
     return (
