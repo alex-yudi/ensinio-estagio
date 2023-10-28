@@ -16,8 +16,6 @@ export const HeaderContainer = styled.header`
         width: 9.91925rem;
         height: 2.5rem;
     }
-    
-    border: 1px solid red;
 
     position: fixed;
     top: 0;
