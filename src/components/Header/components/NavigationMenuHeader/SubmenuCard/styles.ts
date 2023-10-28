@@ -21,7 +21,7 @@ export const ContainerSubmenuCard = styled.div`
     border-radius: 5px;
     &:hover {
         cursor: pointer;
-        box-shadow: 0px 0px 0px 0.5px #5A5566;
+        box-shadow: 0px 0px 0px 0.5px ${props => props.theme.color.brandColorTealPure};
         transition: box-shadow .3s;
     }
 `

@@ -18,7 +18,10 @@ export const HatLink = styled.a`
 
     &:hover{
         cursor: pointer;
+
         text-decoration: underline;
+        text-decoration-color: ${props => props.theme.color.brandColorTealPure};
+        transition: all .3s;
     }
 `
 
@@ -53,7 +56,8 @@ export const LinkOtherResources = styled.a`
 
     &:hover {
         cursor: pointer;
-        color:${props => props.theme.color.brandColorPure}
+        color:${props => props.theme.color.brandColorTealPure};
+        transition: all .3s;
     }
 `
 
@@ -76,5 +80,6 @@ export const LinkSeeMore = styled.a`
         cursor: pointer;
         color:${props => props.theme.color.brandColorTealPure};
         transform: scale(1.05);
+        transition: all .3s;
     }
 `

@@ -64,6 +64,9 @@ export const ButtonStartHero = styled.button`
     //TODO: Interações de hover
     &:hover{
         cursor: pointer;
+        filter: brightness(0.85);
+        box-shadow: 0 0 3px ${props => props.theme.color.brandColorTealPure};
+        transition: all .3s;
     }
 `
 
@@ -74,6 +77,8 @@ export const ButtonSeeVideoHero = styled.button`
     align-items: center;
     
     gap: 0.5rem;
+    border-radius: 25px;
+    padding: 0 1rem;
 
     text-align: end;
     color: ${props => props.theme.color.mainFontLight};
@@ -81,6 +86,8 @@ export const ButtonSeeVideoHero = styled.button`
     //TODO: Interações de hover
     &:hover{
         cursor: pointer;
+        box-shadow: 0 0 3px ${props => props.theme.color.brandColorTealPure};
+        transition: all .3s;
     }
 `
 

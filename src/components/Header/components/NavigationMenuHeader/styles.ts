@@ -22,7 +22,9 @@ export const MenuContent = styled(NavigationMenu.List)`
 export const MenuItem = styled(NavigationMenu.Item)`
     &:hover:nth-last-child(-n+4){
         cursor: pointer;
-        text-decoration: underline; 
+        text-decoration: underline;
+        text-decoration-color: ${props => props.theme.color.brandColorTealPure};
+        transition: all .3s;
     }
 `
 

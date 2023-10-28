@@ -34,9 +34,7 @@ export const ClientSignIn = styled(NavigationMenu.Link)`
 
     &:hover{
         cursor: pointer;
-        text-decoration: underline;
-
-        box-shadow: 0 0 3px #05EDE3;
+        box-shadow: 0 0 3px ${props => props.theme.color.brandColorTealPure};
         transition: box-shadow .3s;
         transition: cursor .3s;
     }
@@ -51,8 +49,8 @@ export const StartButton = styled(NavigationMenu.Link)`
     border-radius: 5rem;
 
     &:hover{
-        cursor: pointer; // TODO: Criar uma interação melhor pra essa parte
-        box-shadow: 0 0 3px #05EDE3;
+        cursor: pointer;
+        box-shadow: 0 0 3px ${props => props.theme.color.brandColorTealPure};
         transition: box-shadow .3s;
     }
 `

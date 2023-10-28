@@ -18,9 +18,7 @@ export function MainHome() {
                     alt=""
                     color="brandColorDark"
                 />
-                <HatLink
-                    href=""
-                >
+                <HatLink>
                     Conheça alguns dos nossos recursos  ⚡️
                 </HatLink>
             </ContainerTitle>
@@ -55,12 +53,12 @@ export function MainHome() {
             </ContainerContentMainHome>
 
             <FooterMainHome>
-                <LinkOtherResources href="">
+                <LinkOtherResources>
                     <img src={rocketIcon} />
                     Veja todos os outros recursos disponíveis para te ajudar
                 </LinkOtherResources>
 
-                <LinkSeeMore href="">
+                <LinkSeeMore>
                     Ver mais
                     <img src={arrowRight} />
                 </LinkSeeMore>
