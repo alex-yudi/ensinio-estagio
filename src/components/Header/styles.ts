@@ -15,6 +15,7 @@ export const HeaderContainer = styled.header`
     & > img {
         width: 9.91925rem;
         height: 2.5rem;
+        margin-right: 5rem;
     }
 
     position: fixed;
@@ -24,22 +25,15 @@ export const HeaderContainer = styled.header`
     backdrop-filter: blur(15px);
 `
 
-export const HeaderContent = styled.div`
-
-`
 
 export const ContentContainer = styled.div`
     display: flex;
     align-items: center;
-    
-    width: 100%;
-    height: 100%;
 `
 
 export const SeparatorMenu = styled(Separator.Root)`
     width: 0.0625rem;
     height: 1.5rem;
 
-    margin: 3rem;
     background-color: ${props => props.theme.color.brandColorTealLight};
 `

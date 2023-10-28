@@ -6,23 +6,20 @@ export const MenuContainer = styled(NavigationMenu.Root)`
     display: flex;
     align-items: center;
 
-    padding-left: 9.6rem;
-
     font: ${props => props.theme.fonts.menuOptions};
-    color: ${props => props.theme.color.mainFontLight}
+    color: ${props => props.theme.color.mainFontLight};
 `
 
 export const MenuContent = styled(NavigationMenu.List)`
+    list-style: none;
+
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
     gap:2.5rem;
 `
 
 export const MenuItem = styled(NavigationMenu.Item)`
-    list-style: none;
-
     &:hover:nth-last-child(-n+4){
         cursor: pointer;
         text-decoration: underline
