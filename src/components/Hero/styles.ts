@@ -12,9 +12,6 @@ export const HeroContainer = styled.div`
     background-image: url(${backgroundHero});
     background-size: cover;
     background-position: center;
-
-    position: absolute;
-    top:0;
 `
 
 export const ContentHero = styled.div`

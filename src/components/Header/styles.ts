@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
     
     border: 1px solid red;
 
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 99;
     background: rgba(0, 0, 0, 0.03);
