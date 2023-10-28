@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerMainHome = styled.main`
+export const ContainerMainHome = styled.div`
     margin-top: 6.7rem;
     padding: 0 7rem;
 `
@@ -20,4 +20,8 @@ export const HatLink = styled.a`
         cursor: pointer;
         text-decoration: underline;
     }
+`
+
+export const ContainerContentMainHome = styled.main`
+
 `

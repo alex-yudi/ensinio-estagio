@@ -1,5 +1,5 @@
 import { TitleHat } from "../TitleHat";
-import { ContainerMainHome, ContainerTitle, HatLink } from "./styles";
+import { ContainerContentMainHome, ContainerMainHome, ContainerTitle, HatLink } from "./styles";
 import lineIcon from '../../assets/line.svg'
 
 export function MainHome() {
@@ -18,6 +18,9 @@ export function MainHome() {
                     Conheça alguns dos nossos recursos  ⚡️
                 </HatLink>
             </ContainerTitle>
+            <ContainerContentMainHome>
+
+            </ContainerContentMainHome>
         </ContainerMainHome>
     )
 }
