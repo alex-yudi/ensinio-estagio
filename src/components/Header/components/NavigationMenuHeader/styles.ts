@@ -36,7 +36,28 @@ export const IconMenuTrigger = styled(TriangleDownIcon)`
 `
 
 export const MenuTriggerContent = styled(NavigationMenu.Content)`
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap:2.5rem;
 
+
+    width: 40.1875rem;
+    height: 16.4375rem;
+`
+
+export const TitleSolutions = styled.h2`
+    font: ${props => props.theme.fonts.submenuTitle};
+    color: ${props => props.theme.color.brandColorPure};
+    text-transform: uppercase;
+`
+
+export const ContainerTriggerContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:2.5rem;
 `
 
 export const MenuLink = styled(NavigationMenu.Link)`
@@ -54,5 +75,4 @@ export const MenuViewPort = styled(NavigationMenu.Viewport)`
     border-radius: 0.375rem;
 
     background-color: #fff;
-    border:1px solid black; // TODO: Tirar isso
 `
