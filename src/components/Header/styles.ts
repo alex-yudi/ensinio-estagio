@@ -23,6 +23,10 @@ export const HeaderContainer = styled.header`
     z-index: 99;
     background: rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(15px);
+
+    @media (max-width: 1250px) {
+        padding: 0 4rem;
+    }
 `
 
 

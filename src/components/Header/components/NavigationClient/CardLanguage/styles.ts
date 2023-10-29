@@ -31,4 +31,8 @@ export const Language = styled.span`
 
 export const CheckedIcon = styled.img`
     margin-left: 1rem;
+
+    @media (max-width: 1250px) {
+        margin-left: 0.1rem;
+    }
 `

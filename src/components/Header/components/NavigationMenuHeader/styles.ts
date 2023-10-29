@@ -60,6 +60,10 @@ export const ContainerTriggerContent = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5rem;
+
+    @media (max-width: 1250px) {
+        gap: 1rem;
+    }
 `
 
 export const MenuLink = styled(NavigationMenu.Link)`
@@ -77,4 +81,9 @@ export const MenuViewPort = styled(NavigationMenu.Viewport)`
     border-radius: 0.375rem;
 
     background-color: #fff;
+
+    @media (max-width: 1250px) {
+        width: 31rem;
+        height: 17rem;
+    }
 `
