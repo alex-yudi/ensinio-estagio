@@ -7,19 +7,28 @@ import playlistIcon from '../../assets/cards/icon-playlists.svg'
 import folderIcon from '../../assets/cards/icon-folder.svg'
 import rocketIcon from '../../assets/Promotion, Rocket.svg'
 import arrowRight from '../../assets/Arrow, Down.svg'
+import { useContextSelector } from "use-context-selector";
+import { TranslationContext } from "../../stores/contexts/translationStore";
 
 export function MainHome() {
+    const { t } = useContextSelector(
+        TranslationContext,
+        (context) => {
+            return context
+        },
+    )
+
     return (
         <ContainerMainHome>
             <ContainerTitle>
                 <TitleHat
                     srcImg={lineIcon}
-                    title="pensamos em cada detalhe"
+                    title={t('titleHatMainHome')}
                     alt=""
                     color="brandColorDark"
                 />
                 <HatLink>
-                    Conheça alguns dos nossos recursos  ⚡️
+                    {t('hatLinkMainHome')} ⚡️
                 </HatLink>
             </ContainerTitle>
 
@@ -55,11 +64,11 @@ export function MainHome() {
             <FooterMainHome>
                 <LinkOtherResources>
                     <img src={rocketIcon} />
-                    Veja todos os outros recursos disponíveis para te ajudar
+                    {t('linkOtherResources')}
                 </LinkOtherResources>
 
                 <LinkSeeMore>
-                    Ver mais
+                    {t('linkSeeMore')}
                     <img src={arrowRight} />
                 </LinkSeeMore>
             </FooterMainHome>
