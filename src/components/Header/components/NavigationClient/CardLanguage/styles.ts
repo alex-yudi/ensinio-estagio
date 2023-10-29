@@ -6,7 +6,7 @@ export const ContainerCardLanguage = styled.div`
     align-items: center;
     gap: 0.63rem;
 
-    width: 8.625rem;
+    width: 100%;
     height: 3rem;
     padding: 1.5rem;
 

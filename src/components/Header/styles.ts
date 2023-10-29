@@ -37,10 +37,6 @@ export const HeaderContainer = styled.header`
         margin-right: 1rem;
         }
     }
-
-    @media (max-width: 375px) {
-        padding: 0 5rem;
-    }
 `
 
 

@@ -15,15 +15,15 @@ export const HeroContainer = styled.div`
     background-size: cover;
     background-position: center;
 
-    @media (max-width: 375px) {
-        padding: 0 4rem;
-        background-size: cover;
-        align-items: center;
-    }
-
+    
     @media (max-width: 1250px) {
         gap: 0rem;
         padding: 0 4rem;
+    }
+
+    @media (max-width: 375px) {
+        align-items: center;
+        background-size: cover;
     }
 `
 
@@ -43,7 +43,9 @@ export const ContainerContentHero = styled.div`
     }
 
     @media (max-width: 375px) {
-        padding: 0 4rem;
+        align-items: center;
+        justify-content: center;
+        
         width: 20rem;
     }
 `

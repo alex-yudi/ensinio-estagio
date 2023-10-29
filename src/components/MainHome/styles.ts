@@ -8,6 +8,10 @@ export const ContainerMainHome = styled.div`
 export const ContainerTitle = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 375px) {
+        display: none;
+    }
 `
 
 export const HatLink = styled.a`
@@ -33,6 +37,18 @@ export const ContainerContentMainHome = styled.main`
 
     margin-top: 4.19rem;
     margin-bottom: 6.69rem;
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        >div {
+            border: 1px solid ${props => props.theme.color.brandColorPure};
+            padding: 1rem;
+            border-radius: 6px;
+        }
+    }
 `
 
 export const FooterMainHome = styled.footer`
@@ -40,6 +56,12 @@ export const FooterMainHome = styled.footer`
     justify-content: space-between;
 
     margin-bottom: 6.9rem;
+
+    @media (max-width: 375px) {
+        justify-content:flex-end;
+        width: 100%;
+        margin-bottom: 10rem;
+    }
 `
 
 export const LinkOtherResources = styled.a`
@@ -60,6 +82,10 @@ export const LinkOtherResources = styled.a`
         cursor: pointer;
         color:${props => props.theme.color.brandColorTealPure};
         transition: all .3s;
+    }
+
+    @media (max-width: 375px) {
+        display: none;
     }
 `
 
