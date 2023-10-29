@@ -4,8 +4,17 @@ import devicesIcon from '../../assets/devices.svg'
 import playIcon from '../../assets/Play.svg'
 import { TitleHat } from "../TitleHat";
 
+import { useTranslation } from "react-i18next";
+import i18next from "../../lib/i18next";
+
 
 export function Hero() {
+    const { t } = useTranslation();
+
+    const handleTeste = () => {
+        console.log('clicou')
+        i18next.changeLanguage('en')
+    }
     return (
         <HeroContainer>
             <ContainerContentHero>
@@ -18,6 +27,7 @@ export function Hero() {
                 />
                 <ContentHero>
                     <TitleContentHero>
+                        {t('teste1')}<br />
                         Sua escola online <br />
                         poderosa e lucrativa
                     </TitleContentHero>
@@ -27,7 +37,10 @@ export function Hero() {
                     </DescriptionContentHero>
 
                     <ContainerButtonsHero>
-                        <ButtonStartHero >
+                        <ButtonStartHero
+                            onClick={handleTeste}
+                            type="button"
+                        >
                             Começar agora
                         </ButtonStartHero>
 
