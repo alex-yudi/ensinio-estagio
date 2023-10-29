@@ -5,10 +5,6 @@ import playIcon from '../../assets/Play.svg'
 import { TitleHat } from "../TitleHat";
 import { useContextSelector } from "use-context-selector";
 import { TranslationContext } from "../../stores/contexts/translationStore";
-import i18next from '../../lib/i18n/i18next'
-import { fetchDataCards } from "../../utils/translateReq";
-import { use } from "i18next";
-import { useEffect } from "react";
 
 
 export function Hero() {
@@ -18,11 +14,6 @@ export function Hero() {
             return context
         },
     )
-
-    const handleTeste = async () => {
-        //i18next.changeLanguage('en');
-        return
-    }
 
     return (
         <HeroContainer>
@@ -45,7 +36,6 @@ export function Hero() {
 
                     <ContainerButtonsHero>
                         <ButtonStartHero
-                            onClick={handleTeste}
                             type="button"
                         >
                             {t('buttonStartHero')}

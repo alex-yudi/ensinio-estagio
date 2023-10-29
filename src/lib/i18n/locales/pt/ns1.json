@@ -21,5 +21,9 @@
     "linkOtherResources": "Veja todos os outros recursos disponíveis para te ajudar",
     "linkSeeMore": "Ver mais",
     "titleCard1": "{{titleCard1Api}}",
-    "descriptionCard1": "{{descriptionCard1Api}}"
+    "descriptionCard1": "{{descriptionCard1Api}}",
+    "titleCard2": "{{titleCard2Api}}",
+    "descriptionCard2": "{{descriptionCard2Api}}",
+    "titleCard3": "{{titleCard3Api}}",
+    "descriptionCard3": "{{descriptionCard3Api}}"
 }
