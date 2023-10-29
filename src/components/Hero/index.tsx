@@ -5,9 +5,11 @@ import playIcon from '../../assets/Play.svg'
 import { TitleHat } from "../TitleHat";
 import { useContextSelector } from "use-context-selector";
 import { TranslationContext } from "../../stores/contexts/translationStore";
+import i18next from '../../lib/i18n/i18next'
+import { fetchDataCards } from "../../utils/translateReq";
+import { use } from "i18next";
+import { useEffect } from "react";
 
-
-import i18next from "../../lib/i18next";
 
 export function Hero() {
     const { t } = useContextSelector(
@@ -17,10 +19,11 @@ export function Hero() {
         },
     )
 
-    const handleTeste = () => {
-        console.log('clicou')
-        i18next.changeLanguage('es')
+    const handleTeste = async () => {
+        //i18next.changeLanguage('en');
+        return
     }
+
     return (
         <HeroContainer>
             <ContainerContentHero>

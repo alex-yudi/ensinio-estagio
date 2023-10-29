@@ -19,5 +19,7 @@
     "titleHatMainHome": "we think about every detail",
     "hatLinkMainHome": "Discover some of our features",
     "linkOtherResources": "Check out all the other available resources to assist you",
-    "linkSeeMore": "See More"
+    "linkSeeMore": "See More",
+    "titleCard1": "{{titleCard1Api}}",
+    "descriptionCard1": "{{descriptionCard1Api}}"
 }
