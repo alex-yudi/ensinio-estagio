@@ -31,13 +31,13 @@ export function NavigationMenuHeader() {
                         </TitleSolutions>
                         <ContainerTriggerContent>
                             <SubmenuCard
-                                title={t("coreSolutions")}
+                                title={t("createASchool")}
                                 description='Lorem ipsum dolor sit amet'
                                 orientation='horizontal'
                                 iconSrc={eadIcon}
                             />
                             <SubmenuCard
-                                title={t('createASchool')}
+                                title={t('communityAndSocial')}
                                 description='Lorem ipsum dolor sit amet'
                                 orientation='horizontal'
                                 iconSrc={socialIcon}
@@ -46,13 +46,13 @@ export function NavigationMenuHeader() {
                                 title={t('gamification')}
                                 description='Lorem ipsum dolor sit amet'
                                 orientation='horizontal'
-                                iconSrc={appIcon}
+                                iconSrc={gamificationIcon}
                             />
                             <SubmenuCard
-                                title={t('createASchool')}
+                                title={t('mobile')}
                                 description='Lorem ipsum dolor sit amet'
                                 orientation='horizontal'
-                                iconSrc={gamificationIcon}
+                                iconSrc={appIcon}
                             />
 
                         </ContainerTriggerContent>

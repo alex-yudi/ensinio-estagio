@@ -7,6 +7,7 @@ import { useContextSelector } from "use-context-selector";
 import { TranslationContext } from "../../stores/contexts/translationStore";
 
 
+import i18next from "../../lib/i18next";
 
 export function Hero() {
     const { t } = useContextSelector(
@@ -18,6 +19,7 @@ export function Hero() {
 
     const handleTeste = () => {
         console.log('clicou')
+        i18next.changeLanguage('es')
     }
     return (
         <HeroContainer>
