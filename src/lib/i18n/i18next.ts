@@ -1,6 +1,6 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next"
-import HttpApi from 'i18next-http-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 //Import all translation files
 import Portuguese from "./locales/pt/ns1.json"
@@ -9,10 +9,9 @@ import Spanish from "./locales/es/ns1.json"
 import { fetchDataCards } from "../../utils/translateReq";
 
 i18next
-    .use(HttpApi)
+    .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        lng: "pt",
         debug: true,
         saveMissing: true,
         resources: {
@@ -26,10 +25,12 @@ i18next
                 translation: Spanish,
             },
         },
+        detection: {
+            order: ['localStorage', 'navigator', 'sessionStorage', 'querystring', 'cookie', 'navigator', 'htmlTag', 'path', 'subdomain'],
+            lookupLocalStorage: 'i18nextLng',
+        }
     });
 
 fetchDataCards()
-
-
 
 export default i18next;

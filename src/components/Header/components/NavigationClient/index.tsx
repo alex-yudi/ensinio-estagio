@@ -41,7 +41,7 @@ export function NavigationClient() {
 
                 <ItemMenuClient>
                     <TriggerLanguages>
-                        {currentLanguage.toUpperCase()}
+                        {currentLanguage.toUpperCase().slice(0, 2)}
                         <IconMenuTrigger />
                     </TriggerLanguages>
 
