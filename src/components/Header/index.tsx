@@ -1,13 +1,23 @@
-import { HeaderContainer, HeaderContent } from './styles'
+import { HeaderContainer, ContentContainer, SeparatorMenu } from './styles'
 import logoImg from '../../assets/logo.svg'
+import { NavigationMenuHeader } from './components/NavigationMenuHeader'
+import { NavigationClient } from './components/NavigationClient'
 
+
+// TODO: Alterar para header ser sticky e ter outro z-index;
 export function Header() {
   return (
     <HeaderContainer>
-      <HeaderContent>
-        <img src={logoImg} alt="" />
+      <img src={logoImg} alt="" />
 
-      </HeaderContent>
+      <ContentContainer>
+        <NavigationMenuHeader />
+      </ContentContainer>
+
+      <SeparatorMenu />
+
+      <NavigationClient />
+
     </HeaderContainer>
   )
 }

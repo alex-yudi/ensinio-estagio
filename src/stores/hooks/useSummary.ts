@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useContextSelector } from "use-context-selector";
-import { ExamplesContext } from '../contexts/counterStore';
+import { ExamplesContext } from '../contexts/translationStore';
 
 export function useSammary() {
   const results = useContextSelector(ExamplesContext, (context) => { return context.results })

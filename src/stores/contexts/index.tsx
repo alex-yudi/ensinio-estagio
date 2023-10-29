@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { ExampleProvider } from './counterStore';
+import { TranslationProvider } from './translationStore';
 
 interface AppProviderProps {
   children: ReactNode
@@ -7,9 +7,9 @@ interface AppProviderProps {
 
 export function AppProvider({ children }: AppProviderProps) {
   return (
-    <ExampleProvider>
+    <TranslationProvider>
       {children}
-    </ExampleProvider>
+    </TranslationProvider>
   );
 }
 

@@ -7,15 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  :focus {
-    outline: 0;
-    box-shadow: 0 0 0 2px ${(props) => props.theme['purple100']};
-  }
-
   body {
-
+    font-family: Inter;
   }
 
-  body, input, textarea, button {
+  h1, h2, h3, h4 {
+    font-family: sans-serif; // TODO: Informar no README o não uso da Degular, pois fonte é paga.
   } 
 `
