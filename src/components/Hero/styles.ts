@@ -14,6 +14,11 @@ export const HeroContainer = styled.div`
     background-image: url(${backgroundHero});
     background-size: cover;
     background-position: center;
+
+    @media (max-width: 1250px) {
+        gap: 0rem;
+        padding: 0 4rem;
+    }
 `
 
 export const ContainerContentHero = styled.div`
@@ -24,6 +29,11 @@ export const ContainerContentHero = styled.div`
     padding:7.62rem 0;
 
     width: 31.1875rem;
+
+
+    @media (max-width: 1250px) {
+        width: 27rem;
+    }
 `
 
 export const ContentHero = styled.div`
@@ -68,6 +78,11 @@ export const ButtonStartHero = styled.button`
         box-shadow: 0 0 3px ${props => props.theme.color.brandColorTealPure};
         transition: all .3s;
     }
+
+    @media (max-width: 1250px) {
+        width: 9rem;
+        height: 2.5rem;
+    }
 `
 
 export const ButtonSeeVideoHero = styled.button`
@@ -88,6 +103,11 @@ export const ButtonSeeVideoHero = styled.button`
         cursor: pointer;
         box-shadow: 0 0 3px ${props => props.theme.color.brandColorTealPure};
         transition: all .3s;
+    }
+
+    @media (max-width: 1250px) {
+        padding: 0 0.5rem;
+        gap: 0.3rem;
     }
 `
 
