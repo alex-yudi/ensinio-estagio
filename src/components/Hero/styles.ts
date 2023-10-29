@@ -19,6 +19,10 @@ export const HeroContainer = styled.div`
         gap: 0rem;
         padding: 0 4rem;
     }
+
+    @media (max-width: 1024) {
+        width: 100%;
+    }
 `
 
 export const ContainerContentHero = styled.div`
@@ -114,4 +118,9 @@ export const ButtonSeeVideoHero = styled.button`
 export const ImageHero = styled.img`
     height: 33.3125rem;
     margin-right: -2rem;
+
+    @media (max-width: 1152px) {
+        height: 28rem;
+        margin-right: 0;
+    }
 `

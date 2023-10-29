@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     padding: 0 7rem;
 
-    min-width: 100%;
+    width: 100%;
     height: 5.5rem;
     
     & > img {
@@ -26,6 +26,16 @@ export const HeaderContainer = styled.header`
 
     @media (max-width: 1250px) {
         padding: 0 4rem;
+    }
+
+    @media (max-width: 1060px) {
+        padding: 0 4rem;
+        
+        & > img {
+        width: 9.91925rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        }
     }
 `
 

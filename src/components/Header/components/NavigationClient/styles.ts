@@ -20,6 +20,10 @@ export const MenuClientList = styled(NavigationMenu.List)`
     
     gap: 2.5rem;
     width: 100%;
+
+    @media (max-width: 1025px) {
+        gap:1rem;
+    }
 `
 
 export const ItemMenuClient = styled(NavigationMenu.Item)`
@@ -55,7 +59,7 @@ export const StartButton = styled(NavigationMenu.Link)`
     }
 
     @media (max-width: 1250px) {
-        width: 8rem;
+        width: 5rem;
         height: 2.5rem;
         padding: 0.5rem 1rem;
     }
