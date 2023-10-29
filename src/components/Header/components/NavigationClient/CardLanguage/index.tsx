@@ -7,9 +7,10 @@ import checkIcon from '../../../../../assets/flags/checkmark-square.svg'
 type CardLanguageProps = {
     language: "brazil" | "usa" | "spain";
     checked?: boolean;
+    onClick: () => void;
 }
 
-export function CardLanguage({ language, checked }: CardLanguageProps) {
+export function CardLanguage({ onClick, language, checked }: CardLanguageProps) {
     const flagIcon = () => {
         switch (language) {
             case "brazil": return brazilIcon;
@@ -27,7 +28,9 @@ export function CardLanguage({ language, checked }: CardLanguageProps) {
 
 
     return (
-        <ContainerCardLanguage>
+        <ContainerCardLanguage
+            onClick={onClick}
+        >
             <FlagIcon src={flagIcon()} alt={language} />
 
             <Language>

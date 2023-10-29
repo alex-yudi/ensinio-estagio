@@ -6,12 +6,22 @@ import { TranslationContext } from "../../../../stores/contexts/translationStore
 
 export function NavigationClient() {
 
-    const { t } = useContextSelector(
+    const { t, currentLanguage, changeLanguage } = useContextSelector(
         TranslationContext,
         (context) => {
             return context
         },
     )
+
+    const handlePortuguese = () => {
+        changeLanguage("pt")
+    }
+    const handleEnglish = () => {
+        changeLanguage("en")
+    }
+    const handleSpanish = () => {
+        changeLanguage("es")
+    }
 
     return (
         <NavigationMenuClientContainer>
@@ -31,20 +41,25 @@ export function NavigationClient() {
 
                 <ItemMenuClient>
                     <TriggerLanguages>
-                        PT
+                        {currentLanguage.toUpperCase().slice(0, 2)}
                         <IconMenuTrigger />
                     </TriggerLanguages>
 
                     <LanguagesToBeSelected>
                         <CardLanguage
+                            onClick={handlePortuguese}
                             language="brazil"
-                            checked
+                            checked={currentLanguage === "pt" && true}
                         />
                         <CardLanguage
+                            onClick={handleEnglish}
                             language="usa"
+                            checked={currentLanguage === "en" && true}
                         />
                         <CardLanguage
+                            onClick={handleSpanish}
                             language="spain"
+                            checked={currentLanguage === "es" && true}
                         />
                     </LanguagesToBeSelected>
                 </ItemMenuClient>
