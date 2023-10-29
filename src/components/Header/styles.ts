@@ -37,12 +37,20 @@ export const HeaderContainer = styled.header`
         margin-right: 1rem;
         }
     }
+
+    @media (max-width: 375px) {
+        padding: 0 5rem;
+    }
 `
 
 
 export const ContentContainer = styled.div`
     display: flex;
     align-items: center;
+
+    @media (max-width: 375px) {
+        display: none;
+    }
 `
 
 export const SeparatorMenu = styled(Separator.Root)`
@@ -50,4 +58,7 @@ export const SeparatorMenu = styled(Separator.Root)`
     height: 1.5rem;
 
     background-color: ${props => props.theme.color.brandColorTealLight};
+    @media (max-width: 375px) {
+        display: none;
+    }
 `

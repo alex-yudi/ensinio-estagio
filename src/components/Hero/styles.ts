@@ -15,13 +15,15 @@ export const HeroContainer = styled.div`
     background-size: cover;
     background-position: center;
 
+    @media (max-width: 375px) {
+        padding: 0 4rem;
+        background-size: cover;
+        align-items: center;
+    }
+
     @media (max-width: 1250px) {
         gap: 0rem;
         padding: 0 4rem;
-    }
-
-    @media (max-width: 1024) {
-        width: 100%;
     }
 `
 
@@ -34,9 +36,15 @@ export const ContainerContentHero = styled.div`
 
     width: 31.1875rem;
 
-
+    
     @media (max-width: 1250px) {
         width: 27rem;
+        
+    }
+
+    @media (max-width: 375px) {
+        padding: 0 4rem;
+        width: 20rem;
     }
 `
 
@@ -44,11 +52,21 @@ export const ContentHero = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2.75rem;
+
+    @media (max-width: 375px) {
+        gap: 1rem;
+    }
 `
 export const TitleContentHero = styled.h1`
     width: 31.1875rem;
     font: ${props => props.theme.fonts.titleHero};
     color: ${props => props.theme.color.mainFontLight};
+
+
+    @media (max-width: 375px) {
+        width: 20rem;
+        font-size: 3rem;
+    }
 `
 
 export const DescriptionContentHero = styled.p`
@@ -56,6 +74,11 @@ export const DescriptionContentHero = styled.p`
 
     font: ${props => props.theme.fonts.bodyText16};
     color: ${props => props.theme.color.mainFontLight};
+
+    @media (max-width: 375px) {
+        width: 15rem;
+        font-size: 1rem;
+    }
 `
 
 export const ContainerButtonsHero = styled.div`
@@ -113,6 +136,10 @@ export const ButtonSeeVideoHero = styled.button`
         padding: 0 0.5rem;
         gap: 0.3rem;
     }
+
+    @media (max-width: 375px) {
+        display: none;
+    }
 `
 
 export const ImageHero = styled.img`
@@ -122,5 +149,8 @@ export const ImageHero = styled.img`
     @media (max-width: 1152px) {
         height: 28rem;
         margin-right: 0;
+    }
+    @media (max-width: 375px) {
+        display: none;
     }
 `

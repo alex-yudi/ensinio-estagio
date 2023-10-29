@@ -42,6 +42,9 @@ export const ClientSignIn = styled(NavigationMenu.Link)`
         transition: box-shadow .3s;
         transition: cursor .3s;
     }
+    @media (max-width: 375px) {
+        display: none;
+    }
 `
 
 export const StartButton = styled(NavigationMenu.Link)`
@@ -62,6 +65,10 @@ export const StartButton = styled(NavigationMenu.Link)`
         width: 5rem;
         height: 2.5rem;
         padding: 0.5rem 1rem;
+    }
+
+    @media (max-width: 375px) {
+        display: none;
     }
 `
 
