@@ -28,9 +28,8 @@ i18next
         },
     });
 
-fetchDataCards(1)
-fetchDataCards(2)
-fetchDataCards(3)
+fetchDataCards()
+
 
 
 export default i18next;
