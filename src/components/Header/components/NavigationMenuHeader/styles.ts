@@ -17,6 +17,10 @@ export const MenuContent = styled(NavigationMenu.List)`
     justify-content: space-between;
 
     gap:2.5rem;
+    
+    @media (max-width: 1160px) {
+        gap: 0.8rem;
+    }
 `
 
 export const MenuItem = styled(NavigationMenu.Item)`
@@ -44,7 +48,7 @@ export const MenuTriggerContent = styled(NavigationMenu.Content)`
     gap:2.5rem;
 
 
-    width: 40.1875rem;
+    max-width: 40.1875rem;
     height: 16.4375rem;
 `
 
@@ -60,6 +64,10 @@ export const ContainerTriggerContent = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5rem;
+
+    @media (max-width: 1250px) {
+        gap: 1rem;
+    }
 `
 
 export const MenuLink = styled(NavigationMenu.Link)`
@@ -77,4 +85,9 @@ export const MenuViewPort = styled(NavigationMenu.Viewport)`
     border-radius: 0.375rem;
 
     background-color: #fff;
+
+    @media (max-width: 1250px) {
+        width: 31rem;
+        height: 17rem;
+    }
 `

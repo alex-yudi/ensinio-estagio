@@ -24,6 +24,23 @@ export const ContainerSubmenuCard = styled.div`
         box-shadow: 0px 0px 0px 0.5px ${props => props.theme.color.brandColorTealPure};
         transition: box-shadow .3s;
     }
+
+    @media (max-width: 1250px) {
+        padding: 0.1rem;
+
+        &>img {
+            height: 2rem;
+            width: 2rem;
+        }
+        &.vertical {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        &.horizontal {
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+    }
 `
 
 export const ContainerTextSubmenuCard = styled.div`
@@ -36,6 +53,11 @@ export const TitleSubmenuCard = styled.h2`
 
     font: ${props => props.theme.fonts.submenuTitle};
     color:${props => props.theme.color.neutralColor100};
+
+    @media (max-width: 1250px) {
+        width: 10rem;
+    }
+
 `
 
 export const DescriptionSubmenuCard = styled.p`
@@ -43,4 +65,8 @@ export const DescriptionSubmenuCard = styled.p`
 
     font: ${props => props.theme.fonts.submenuDescription};
     color: ${props => props.theme.color.neutralColor200};
+    
+    @media (max-width: 1250px) {
+        width: 10rem;
+    }
 `

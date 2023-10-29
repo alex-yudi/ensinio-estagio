@@ -6,7 +6,7 @@ export const ContainerCardLanguage = styled.div`
     align-items: center;
     gap: 0.63rem;
 
-    width: 8.625rem;
+    width: 100%;
     height: 3rem;
     padding: 1.5rem;
 
@@ -31,4 +31,8 @@ export const Language = styled.span`
 
 export const CheckedIcon = styled.img`
     margin-left: 1rem;
+
+    @media (max-width: 1250px) {
+        margin-left: 0.1rem;
+    }
 `

@@ -20,6 +20,10 @@ export const MenuClientList = styled(NavigationMenu.List)`
     
     gap: 2.5rem;
     width: 100%;
+
+    @media (max-width: 1025px) {
+        gap:1rem;
+    }
 `
 
 export const ItemMenuClient = styled(NavigationMenu.Item)`
@@ -38,6 +42,9 @@ export const ClientSignIn = styled(NavigationMenu.Link)`
         transition: box-shadow .3s;
         transition: cursor .3s;
     }
+    @media (max-width: 375px) {
+        display: none;
+    }
 `
 
 export const StartButton = styled(NavigationMenu.Link)`
@@ -53,6 +60,16 @@ export const StartButton = styled(NavigationMenu.Link)`
         box-shadow: 0 0 3px ${props => props.theme.color.brandColorTealPure};
         transition: box-shadow .3s;
     }
+
+    @media (max-width: 1250px) {
+        width: 5rem;
+        height: 2.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    @media (max-width: 375px) {
+        display: none;
+    }
 `
 
 export const TriggerLanguages = styled(NavigationMenu.Trigger)`
@@ -66,6 +83,10 @@ export const LanguagesToBeSelected = styled(NavigationMenu.Content)`
     width: 8.625rem;
     
     border-radius: 0.5rem;
+
+    @media (max-width: 1250px) {
+        width: 7rem;
+    }
 `
 
 export const Viewport = styled(NavigationMenu.Viewport)`
@@ -80,6 +101,11 @@ export const Viewport = styled(NavigationMenu.Viewport)`
     border-radius: 0.5rem;
 
     background-color: #fff;
+
+     @media (max-width: 1250px) {
+        right:5%;
+        width: 7rem;
+    }
 `
 export const IconMenuTrigger = styled(TriangleDownIcon)`
     color: ${props => props.theme.color.brandColorTealLight}
