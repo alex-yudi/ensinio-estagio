@@ -20,11 +20,6 @@ export function MainHome() {
         },
     )
 
-    const handleTeste = async () => {
-        i18next.changeLanguage('en');
-        return
-    }
-
     return (
         <ContainerMainHome>
             <ContainerTitle>
@@ -35,7 +30,6 @@ export function MainHome() {
                     color="brandColorDark"
                 />
                 <HatLink
-                    onClick={handleTeste}
                 >
                     {t('hatLinkMainHome')} ⚡️
                 </HatLink>
