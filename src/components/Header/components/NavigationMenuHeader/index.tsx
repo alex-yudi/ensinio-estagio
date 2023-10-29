@@ -4,45 +4,55 @@ import eadIcon from '../../../../assets/cards/ead.svg'
 import socialIcon from '../../../../assets/cards/icon-social.svg'
 import appIcon from '../../../../assets/cards/icon-app.svg'
 import gamificationIcon from '../../../../assets/cards/icon-gamification.svg'
+import { useContextSelector } from 'use-context-selector';
+import { TranslationContext } from '../../../../stores/contexts/translationStore';
 
 export function NavigationMenuHeader() {
+
+    const { t } = useContextSelector(
+        TranslationContext,
+        (context) => {
+            return context
+        },
+    )
+
     return (
         <MenuContainer>
             <MenuContent>
                 <MenuItem>
                     <MenuTrigger>
-                        Soluções
+                        {t("solutions")}
                         <IconMenuTrigger />
                     </MenuTrigger>
 
                     <MenuTriggerContent>
                         <TitleSolutions>
-                            Soluções principais
+                            {t("titleHatSubmenuSolutions")}
                         </TitleSolutions>
                         <ContainerTriggerContent>
                             <SubmenuCard
-                                title='Crie uma Escola Online'
+                                title={t("createASchool")}
                                 description='Lorem ipsum dolor sit amet'
                                 orientation='horizontal'
                                 iconSrc={eadIcon}
                             />
                             <SubmenuCard
-                                title='Comunidade e rede social'
+                                title={t('communityAndSocial')}
                                 description='Lorem ipsum dolor sit amet'
                                 orientation='horizontal'
                                 iconSrc={socialIcon}
                             />
                             <SubmenuCard
-                                title='Gamificação'
-                                description='Lorem ipsum dolor sit amet'
-                                orientation='horizontal'
-                                iconSrc={appIcon}
-                            />
-                            <SubmenuCard
-                                title='Aplicativo mobile'
+                                title={t('gamification')}
                                 description='Lorem ipsum dolor sit amet'
                                 orientation='horizontal'
                                 iconSrc={gamificationIcon}
+                            />
+                            <SubmenuCard
+                                title={t('mobile')}
+                                description='Lorem ipsum dolor sit amet'
+                                orientation='horizontal'
+                                iconSrc={appIcon}
                             />
 
                         </ContainerTriggerContent>
@@ -51,10 +61,10 @@ export function NavigationMenuHeader() {
                         </MenuLink> */}
                     </MenuTriggerContent>
                 </MenuItem>
-                <MenuItem>Preços</MenuItem>
-                <MenuItem>Academy</MenuItem>
-                <MenuItem>Blog</MenuItem>
-                <MenuItem>Contato</MenuItem>
+                <MenuItem> {t("prices")}</MenuItem>
+                <MenuItem> {t("academy")}</MenuItem>
+                <MenuItem> {t("blog")}</MenuItem>
+                <MenuItem> {t("contact")}</MenuItem>
             </MenuContent>
 
             <MenuViewPort />

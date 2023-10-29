@@ -3,9 +3,27 @@ import manHero from '../../assets/man-hero.png'
 import devicesIcon from '../../assets/devices.svg'
 import playIcon from '../../assets/Play.svg'
 import { TitleHat } from "../TitleHat";
+import { useContextSelector } from "use-context-selector";
+import { TranslationContext } from "../../stores/contexts/translationStore";
+import i18next from '../../lib/i18n/i18next'
+import { fetchDataCards } from "../../utils/translateReq";
+import { use } from "i18next";
+import { useEffect } from "react";
 
 
 export function Hero() {
+    const { t } = useContextSelector(
+        TranslationContext,
+        (context) => {
+            return context
+        },
+    )
+
+    const handleTeste = async () => {
+        //i18next.changeLanguage('en');
+        return
+    }
+
     return (
         <HeroContainer>
             <ContainerContentHero>
@@ -13,27 +31,29 @@ export function Hero() {
                     srcImg={devicesIcon}
                     color="fontLight"
                     alt=""
-                    title="plataforma all in one"
+                    title={t('titleHatHero')}
                     opacity
                 />
                 <ContentHero>
                     <TitleContentHero>
-                        Sua escola online <br />
-                        poderosa e lucrativa
+                        {t('titleContentHero')}
                     </TitleContentHero>
 
                     <DescriptionContentHero>
-                        Tenha sua própria escola online 100% white label com rede social, gamificação, clube de assinaturas, ecommerce e sistemas EAD completo.
+                        {t('descriptionContentHero')}
                     </DescriptionContentHero>
 
                     <ContainerButtonsHero>
-                        <ButtonStartHero >
-                            Começar agora
+                        <ButtonStartHero
+                            onClick={handleTeste}
+                            type="button"
+                        >
+                            {t('buttonStartHero')}
                         </ButtonStartHero>
 
                         <ButtonSeeVideoHero>
                             <img src={playIcon} alt="" />
-                            Ver vídeo
+                            {t('buttonSeeVideoHero')}
                         </ButtonSeeVideoHero>
                     </ContainerButtonsHero>
                 </ContentHero>

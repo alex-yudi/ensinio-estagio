@@ -7,46 +7,58 @@ import playlistIcon from '../../assets/cards/icon-playlists.svg'
 import folderIcon from '../../assets/cards/icon-folder.svg'
 import rocketIcon from '../../assets/Promotion, Rocket.svg'
 import arrowRight from '../../assets/Arrow, Down.svg'
+import { useContextSelector } from "use-context-selector";
+import { TranslationContext } from "../../stores/contexts/translationStore";
+
+import i18next from '../../lib/i18n/i18next'
 
 export function MainHome() {
+    const { t } = useContextSelector(
+        TranslationContext,
+        (context) => {
+            return context
+        },
+    )
+
+    const handleTeste = async () => {
+        i18next.changeLanguage('en');
+        return
+    }
+
     return (
         <ContainerMainHome>
             <ContainerTitle>
                 <TitleHat
                     srcImg={lineIcon}
-                    title="pensamos em cada detalhe"
+                    title={t('titleHatMainHome')}
                     alt=""
                     color="brandColorDark"
                 />
-                <HatLink>
-                    Conheça alguns dos nossos recursos  ⚡️
+                <HatLink
+                    onClick={handleTeste}
+                >
+                    {t('hatLinkMainHome')} ⚡️
                 </HatLink>
             </ContainerTitle>
 
             <ContainerContentMainHome>
                 <ContentCard
-                    title="Trilhas de etapas"
-                    description={`
-                Crie planos de estudos especificando aulas e/ou cursos e definindo a ordem que seus alunos devem estudar.
-                `}
+                    title={t('titleCard1')}
+                    description={t('descriptionCard1')}
                     iconSrc={trilhasIcon}
                     orientation="vertical"
                 />
 
                 <ContentCard
-                    title="Playlists"
-                    description={`
-                    Transforme uma coleção em uma playlist para poder ver vídeos e áudios em sequência offline.
-                `}
+                    title={t('titleCard2')}
+                    description={t('descriptionCard2')}
                     iconSrc={playlistIcon}
                     orientation="vertical"
                 />
 
                 <ContentCard
-                    title="Coleções"
-                    description={`
-                    Crie coleções, adicione conteúdos, reorganize ítens e deixe tudo do seu jeito para melhorar a experiência.
-                `}
+                    title={t('titleCard3')}
+                    description={t('descriptionCard3')}
                     iconSrc={folderIcon}
                     orientation="vertical"
                 />
@@ -55,11 +67,11 @@ export function MainHome() {
             <FooterMainHome>
                 <LinkOtherResources>
                     <img src={rocketIcon} />
-                    Veja todos os outros recursos disponíveis para te ajudar
+                    {t('linkOtherResources')}
                 </LinkOtherResources>
 
                 <LinkSeeMore>
-                    Ver mais
+                    {t('linkSeeMore')}
                     <img src={arrowRight} />
                 </LinkSeeMore>
             </FooterMainHome>
