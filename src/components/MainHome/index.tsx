@@ -10,7 +10,6 @@ import arrowRight from '../../assets/Arrow, Down.svg'
 import { useContextSelector } from "use-context-selector";
 import { TranslationContext } from "../../stores/contexts/translationStore";
 
-import i18next from '../../lib/i18n/i18next'
 
 export function MainHome() {
     const { t } = useContextSelector(
