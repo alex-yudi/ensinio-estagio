@@ -11,7 +11,7 @@ import { populateDataCards } from "../../utils/populateDataCards";
 
 
 const alternativeApi = 'https://cute-tan-leopard-shoe.cyclic.app';
-const localHost = 'http://localhost:3000'
+const localHost = 'http://localhost:3000/items'
 
 i18next
     .use(HttpApi)
