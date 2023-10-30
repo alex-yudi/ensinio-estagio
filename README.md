@@ -4,6 +4,13 @@ Observações sobre a aplicação/deploy:
   - As informações dos cards preenchidos via requisição da API estão hospedados em um servidor gratuito, existe a possibilidade de, no momento de acesso, a api esteja "dormindo", sendo necessário apenas atualizar a página, para a requisição ocorrer novamente.
   - Na estilização de alguns campos foi utilizado a fonte "sans-seriff", pois a fonte "Degular" não é disponibilizada de maneira gratuita.
 
+Bibliotecas utilizadas no projeto:
+  - RadixUI,
+  - i18next,
+  - react-router-dom,
+  - use-context-selector,
+  - styled-components
+
 # Instruções para executar o projeto localmente (em sua própria máquina)
 # Requisitos:
 - Node instalado no computador (versão utilizada no desenvolvimento foi 18.17)
